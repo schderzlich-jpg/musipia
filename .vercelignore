@@ -16,7 +16,6 @@ __pycache__
 .env.local
 .env.*.local
 backend/.env
-frontend/.env
 
 # IDE
 .vscode
@@ -29,6 +28,10 @@ frontend/.env
 .DS_Store
 Thumbs.db
 
+# Git
+.git
+.gitignore
+
 # Logs
 *.log
 npm-debug.log*
@@ -39,11 +42,8 @@ yarn-error.log*
 coverage
 .nyc_output
 
-# Uploads
-uploads/
+# Misc
+uploads
 *.mp3
 *.musicxml
 deneme.xml
-
-# Misc
-*.cache

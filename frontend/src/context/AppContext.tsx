@@ -40,7 +40,7 @@ interface AppContextType {
   setTransposeOffset: (offset: number) => void;
 }
 
-const API_BASE = 'http://localhost:8000'; // FastAPI backend
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000'; // FastAPI backend
 
 // =========================================================
 // CLIENT-SIDE MIDI PARSER (no backend needed for .mid files)

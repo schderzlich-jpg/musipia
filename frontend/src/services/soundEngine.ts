@@ -143,7 +143,6 @@ class SoundEngine {
 
     if (type === 'lead') {
       this.polySynth = new Tone.PolySynth(Tone.Synth, {
-        maxPolyphony: 32,
         oscillator: { type: 'sawtooth' },
         envelope: {
           attack: this.currentParams.attack,
@@ -154,7 +153,6 @@ class SoundEngine {
       });
     } else if (type === 'pad') {
       this.polySynth = new Tone.PolySynth(Tone.Synth, {
-        maxPolyphony: 32,
         oscillator: { type: 'triangle' },
         envelope: {
           attack: Math.max(0.5, this.currentParams.attack),
@@ -165,7 +163,6 @@ class SoundEngine {
       });
     } else if (type === 'fm') {
       this.polySynth = new Tone.PolySynth(Tone.FMSynth, {
-        maxPolyphony: 16,
         harmonicity: 3,
         modulationIndex: 10,
         envelope: {
@@ -184,7 +181,6 @@ class SoundEngine {
     } else {
       // Warm E-Piano
       this.polySynth = new Tone.PolySynth(Tone.Synth, {
-        maxPolyphony: 32,
         oscillator: { type: 'sine' },
         envelope: {
           attack: 0.005,
