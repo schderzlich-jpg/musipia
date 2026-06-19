@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+motor
+beanie
+pydantic
+pillow
+python-multipart
+mido
+python-dotenv
+yt-dlp
+basic-pitch
